@@ -4,8 +4,11 @@ gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+group :development do
+gem 'faker'
 gem 'sqlite3'
+gem 'spork-rails'
+end
 gem 'gravatar_image_tag'
 
 gem "rspec-rails", :group => [:test, :development]
@@ -13,8 +16,8 @@ gem "factory_girl_rails", :group => [:test]
 
 gem "webrat", :group => [:test, :development]
 #gem "annotate-models", :group => [:development]
-gem 'spork-rails'
-gem 'faker'
+
+
 gem 'will_paginate'
 gem 'mail'
 # Gems used only for assets and not required
@@ -28,7 +31,10 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+group :production do
+  gem 'pg'
+  gem 'thin'
+end
 gem 'jquery-rails'
 
  
