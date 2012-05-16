@@ -40924,3 +40924,17 @@ Migrating to AddPasswordResetToUsers (20120514121919)
   [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_microposts_on_user_id')[0m
   [1m[35m (0.1ms)[0m  PRAGMA index_list("users")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120509104357)
+Migrating to AddEmailUniquenessIndex (20120509125745)
+Migrating to AddPasswordToUsers (20120509143438)
+Migrating to AddSaltToUsers (20120510040514)
+Migrating to AddAdminToUsers (20120511162929)
+Migrating to CreateMicroposts (20120514065643)
+Migrating to AddPasswordResetToUsers (20120514121919)
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("microposts")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_info('index_microposts_on_user_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m
