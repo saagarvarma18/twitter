@@ -31,10 +31,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-group :production do
-  gem 'pg'
-  gem 'thin'
-end
+
 gem 'jquery-rails'
 
  
@@ -62,5 +59,9 @@ gem 'jquery-rails'
 
 #group :test do
 #  gem 'rspec','2.0.0.beta18'
-
+group :production do
+  gem 'pg'
+  gem 'thin'
+  gem 'newrelic_rpm'
+end
 #end
